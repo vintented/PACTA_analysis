@@ -713,7 +713,7 @@ translate_labels <- function(Language){
 
 }
 
-ReportFigures <- function(explicit_filenames = F){
+ReportFigures <- function(explicit_filenames = F, traj_y_axis_indexed=F){
   
   
   
@@ -741,25 +741,25 @@ ReportFigures <- function(explicit_filenames = F){
     #5 year Trajectory
     
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_coal_bonds_"}
-    FiveYearGrowthTrend("07","CB", "CoalCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("07","CB", "CoalCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_renewables_bonds_"}
-    FiveYearGrowthTrend("08","CB", "RenewablesCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("08","CB", "RenewablesCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_coal_bonds_"}
-    FiveYearGrowthTrend("09","CB", "GasCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("09","CB", "GasCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_hydro_bonds_"}
-    FiveYearGrowthTrend("10","CB", "HydroCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("10","CB", "HydroCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_oil_bonds_"}
-    FiveYearGrowthTrend("11","CB", "Oil", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("11","CB", "Oil", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_gas_bonds_"}
-    FiveYearGrowthTrend("12","CB", "Gas", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("12","CB", "Gas", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_coal_bonds_"}
-    FiveYearGrowthTrend("13","CB", "Coal", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("13","CB", "Coal", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_ice_bonds_"}
-    FiveYearGrowthTrend("14","CB", "ICE", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("14","CB", "ICE", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_electric_bonds_"}
-    FiveYearGrowthTrend("15","CB", "Electric", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("15","CB", "Electric", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_hybrid_bonds_"}
-    FiveYearGrowthTrend("16","CB", "Hybrid", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("16","CB", "Hybrid", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
   }
 
   if (!explicit_filenames==F){explicit_filename = "_future_tech_mix_equity_"}
@@ -769,25 +769,25 @@ ReportFigures <- function(explicit_filenames = F){
 
     #5 year Trajectory
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_coal_equity_"}
-    FiveYearGrowthTrend("17","EQ", "CoalCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("17","EQ", "CoalCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_renewables_equity_"}
-    FiveYearGrowthTrend("18","EQ", "RenewablesCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("18","EQ", "RenewablesCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_hydro_equity_"}
-     FiveYearGrowthTrend("19","EQ", "GasCap", LegendOn = F, explicit_filename = explicit_filename)
+     FiveYearGrowthTrend("19","EQ", "GasCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_power_hydro_equity_"}
-    FiveYearGrowthTrend("20","EQ", "HydroCap", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("20","EQ", "HydroCap", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_oil_equity_"}
-    FiveYearGrowthTrend("21","EQ", "Oil", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("21","EQ", "Oil", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_gas_equity_"}
-    FiveYearGrowthTrend("22","EQ", "Gas", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("22","EQ", "Gas", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_fossil_coal_equity_"}
-    FiveYearGrowthTrend("23","EQ", "Coal", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("23","EQ", "Coal", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_ice_equity_"}
-    FiveYearGrowthTrend("24","EQ", "ICE", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("24","EQ", "ICE", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_electric_equity_"}
-    FiveYearGrowthTrend("25","EQ", "Electric", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("25","EQ", "Electric", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  traj_y_axis_indexed)
     if (!explicit_filenames==F){explicit_filename = "_alignment_auto_hybrid_equity_"}
-    FiveYearGrowthTrend("26","EQ", "Hybrid", LegendOn = F, explicit_filename = explicit_filename)
+    FiveYearGrowthTrend("26","EQ", "Hybrid", LegendOn = F, explicit_filename = explicit_filename, y_axis_indexed =  y_axis_indexed)
   }
 
   if(IncOtherSectors == T){
@@ -1181,7 +1181,7 @@ TechnologyExposure <- function(plotnumber,chart_type,sector_to_plot,plot_year, e
 
 }
 
-FiveYearGrowthTrend <- function(plotnumber, chart_type, tech_to_plot, LegendOn = FALSE, explicit_filename = ""){
+FiveYearGrowthTrend <- function(plotnumber, chart_type, tech_to_plot, LegendOn = FALSE, explicit_filename = "", y_axis_indexed = F){
 
   tech_to_plot <<- tech_to_plot
 
@@ -1550,16 +1550,27 @@ FiveYearGrowthTrend <- function(plotnumber, chart_type, tech_to_plot, LegendOn =
                       "Line3"="2D-4D",
                       "Line2"="2D",
                       "Line1"="1D")
-
     outputplot <- ggplot(data = subset(ALD.sc.tall, technology == tech_to_plot & ALD.sc.tall$portfolio_name == PortNames )) +
       geom_ribbon(aes(ymin=lower, ymax=Value, x=year,fill=Target),alpha=0.75) +
       scale_fill_manual(labels=eval(parse(text = paste(GoodBad,".labels",sep = ""))), values=eval(parse(text = paste(GoodBad,".fill",sep = "")))) +
       scale_x_continuous(name=Year, expand=c(0,0),limits=c(start_year, start_year + 5.6)) +
       scale_y_continuous(name=paste0(WeightedProduction," (",eval(parse(text = paste(GoodBad,".unit",sep = "")))[tech_to_plot],")"),
                          expand=c(0,0),
-                         breaks=round(seq(round(MIN.Y,digits = round.digits),round(MAX.Y,digits = round.digits),length.out = 5),digits = round.digits)) +
+                         breaks=round(seq(round(MIN.Y,digits = round.digits),round(MAX.Y,digits = round.digits),length.out = 5),digits = round.digits))                        +
       theme_246() + theme(legend.position = "none") +
       coord_cartesian(ylim=c(round(MIN.Y,digits = round.digits), round(MAX.Y,digits = round.digits)))
+    
+    if (y_axis_indexed){
+    outputplot <- ggplot(data = subset(ALD.sc.tall, technology == tech_to_plot & ALD.sc.tall$portfolio_name == PortNames )) +
+      geom_ribbon(aes(ymin=lower, ymax=Value, x=year,fill=Target),alpha=0.75) +
+      scale_fill_manual(labels=eval(parse(text = paste(GoodBad,".labels",sep = ""))), values=eval(parse(text = paste(GoodBad,".fill",sep = "")))) +
+      scale_x_continuous(name=Year, expand=c(0,0),limits=c(start_year, start_year + 5.6)) +
+      scale_y_continuous(name=paste0(WeightedProduction," (",eval(parse(text = paste(GoodBad,".unit",sep = "")))[tech_to_plot],")"),
+                         expand=c(0,0),
+                         breaks=round(seq(round(MIN.Y,digits = round.digits),round(MAX.Y,digits = round.digits),length.out = 5),digits = round.digits),
+                         labels=function(x)x/ALD.sc.tall[,"Value"][[1]] * 100) +
+      theme_246() + theme(legend.position = "none") +
+      coord_cartesian(ylim=c(round(MIN.Y,digits = round.digits), round(MAX.Y,digits = round.digits)))}
 
 
     if (chart_type =="CB"){
